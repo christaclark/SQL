@@ -42,3 +42,15 @@ Data types // You need to get it in the correct format to be able to analyze:
   - MySQL -> commands -> file path 
   - You have to create a table with data types before you load the data into the table 
   - Make sure you define everything before running ETL!! - Python is the best languae for running it
+
+Example: 
+DROP TABLE IF EXISTS user_logs;
+CREATE TABLE user_logs (
+	event_id INT NOT NULL AUTO_INCREMENT, /* You can't have more than one Event_ID. */
+	time_stamp TIMESTAMP NOT NULL,
+	user_id INT NOT NULL,
+	user_logged_in BOOLEAN,
+	resolution_id INT,
+	duration_on_page FLOAT(6,2),
+	PRIMARY KEY (event_id)
+);
