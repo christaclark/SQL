@@ -36,4 +36,9 @@ Data types // You need to get it in the correct format to be able to analyze:
   - CHAR(<length>) - text with a fixed length 
   - VARCHAR(<length>) - text with a given maximum length 
      - useful for building a schema and converting data once it's been pulled out (such as exporting to excel)
-  -  
+
+ ETL (Extract, Transform and Load):
+  - How do we get all data to go into the same place/ server? Take Data from a 3rd party
+  - MySQL -> commands -> file path 
+  - You have to create a table with data types before you load the data into the table 
+  - Make sure you define everything before running ETL!! - Python is the best languae for running it
